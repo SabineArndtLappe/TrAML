@@ -1,0 +1,22 @@
+# wxpar Getopt::Argfile for PAR::Packer pp
+# -M attributes.pm
+
+-gui
+-c
+-o dist/AMGuiWin32.exe
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/libgcc_s_dw2-1.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_xrc_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_gl_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_core_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxbase30u_xml_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_richtext_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_html_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_adv_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_media_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_ribbon_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_webview_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxbase30u_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxbase30u_net_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_aui_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_stc_gcc_custom.dll
+-l C:/STRAWB~1/perl/site/lib/Alien/WXWIDG~1/MSW_3_~1/lib/wxmsw30u_propgrid_gcc_custom.dll
