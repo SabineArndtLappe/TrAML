@@ -13,7 +13,7 @@ requires 'Text::Patch', '>= 1.8, <2.0';
 requires 'Text::Soundex', '>= 3.05, <4.0';
 requires 'Try::Tiny', '>= 0.30, <1.0';
 requires 'Unicode::LineBreak', '2019.001';
-# On Mac, first do `brew install wxmac`
+# wxwidgets must already be installed
 requires 'Wx', '>= 0.9932, < 1.0';
 requires 'Wx::Perl::Packager', '>= 0.27, <1.0';
 

@@ -15,11 +15,11 @@ sub new {
 
     my $self = $class->SUPER::new($main);
     bless $self, $class;
-    
+
     $self->{title}   = "Predictions";
     $self->{output_filename} = "predictions.csv";
     #$self->{purpose} = AMGui::Wx::Viewer::RESULTS;
-    
+
     # individual reports are managed by a ResultViewer that keeps them
     # synchronized. Some methods can be forwarded back to the manager.
     $self->{manager} = $mgr;
@@ -53,7 +53,7 @@ sub add {
     unless ( $self->has_header ) {
         push @colnames, ("Expected", "Predicted");
     }
-    
+
     # for each class in the dataset...
     my @classes = $result->training_set->classes; # contains all classes
     my %scores = %{$result->scores}; # contains only classes for this item
@@ -88,7 +88,7 @@ sub add {
     unless ( $self->has_header ) {
 #       warn "Num colnames: " . scalar @colnames;
 #       warn join(",", @colnames);
-        #my $colcount = 
+        #my $colcount =
         $self->add_columns(\@colnames);
         #warn "Number of columns: " . $colcount;
     }

@@ -17,11 +17,11 @@ sub new {
 
     my $self = $class->SUPER::new($main);
     bless $self, $class;
-    
+
     $self->{title}   = "Analogical Sets";
     $self->{output_filename} = "analogical_sets.csv";
     #$self->{purpose} = AMGui::Wx::Viewer::RESULTS;
-    
+
     # individual reports are managed by a ResultViewer that keeps them
     # synchronized. Some methods can be forwarded back to the manager.
     $self->{manager} = $mgr;

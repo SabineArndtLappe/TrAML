@@ -17,8 +17,8 @@ sub aui_pane_info {
     my $class = shift;
     my $info  = Wx::AuiPaneInfo->new;
     while (@_) {
-	my $method = shift;
-	$info->$method(shift);
+    my $method = shift;
+    $info->$method(shift);
     }
     return $info;
 }

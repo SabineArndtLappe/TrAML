@@ -15,7 +15,7 @@ sub new {
 
     my $self = $class->SUPER::new(@_);
     bless $self, $class;
-    
+
     # tips are shown in the status bar
     my %tips = (
         wxID_RUN_NEXT          => _T("Classifies the next-after-highlighted item in the testing dataset."),
@@ -24,7 +24,7 @@ sub new {
         wxID_RUN_INCLUDE_NULLS => _T("If checked, treats null variables in a test item as regular variables."),
         wxID_RUN_INCLUDE_GIVEN => _T("If checked, allows a test item to be included in the data set during classification.")
     );
-    
+
     $self->Append(wxID_RUN_NEXT,
                  _T("Run AM on the &next item\tCtrl+R"),
                  $tips{wxID_RUN_NEXT});
@@ -39,19 +39,19 @@ sub new {
                            $tips{wxID_RUN_LINEAR});
     $self->Check(wxID_RUN_LINEAR,
                  $main->amoptions->{linear});
-    
+
     $self->AppendCheckItem(wxID_RUN_INCLUDE_NULLS,
-                           _T("Include &nulls"), 
+                           _T("Include &nulls"),
                            $tips{wxID_RUN_INCLUDE_NULLS});
     $self->Check(wxID_RUN_INCLUDE_NULLS,
                  !$main->amoptions->{exclude_nulls});
-    
+
     $self->AppendCheckItem(wxID_RUN_INCLUDE_GIVEN,
-                           _T("Include &given"), 
+                           _T("Include &given"),
                            $tips{wxID_RUN_INCLUDE_GIVEN});
     $self->Check(wxID_RUN_INCLUDE_GIVEN,
                  !$main->amoptions->{exclude_given});
-    
+
     return $self;
 }
 
