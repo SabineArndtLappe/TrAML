@@ -64,9 +64,9 @@ sub new {
         "   + Reports of different types suggest appropriate output file names",
         "6. Controlling Linear/Quadratic, Nulls and Given",
         "   + Menu Run/Linear acts as toggle for switching between Linear (checked) and Quadratic modes.",
-		"   + Menu Run/Include Nulls and Run/Include given act like toggle for corresponding options in AM library.",
-		"7. Possibility to generate several/different types of reports",
-		"   + Menu Reports"
+        "   + Menu Run/Include Nulls and Run/Include given act like toggle for corresponding options in AM library.",
+        "7. Possibility to generate several/different types of reports",
+        "   + Menu Reports"
     ];
 
     my $self = $class->SUPER::new(

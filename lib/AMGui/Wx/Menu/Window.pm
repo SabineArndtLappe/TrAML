@@ -12,7 +12,7 @@ our @ISA = 'Wx::Menu';
 sub new {
     my $class = shift;
     my $main  = shift;
-    
+
     my $self = $class->SUPER::new(@_);
     bless $self, $class;
 
@@ -28,7 +28,7 @@ sub new {
                   _T("Previous Tab\tCtrl+PGUP"),
                   $tips{wxID_PREV_TAB});
     #$self->AppendSeparator();
-  
+
     return $self;
 }
 

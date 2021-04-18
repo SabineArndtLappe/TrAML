@@ -30,7 +30,7 @@ use Class::XSAccessor {
 
 sub new {
     my ($class, $parent) = @_;
-    
+
     my $self = $class->SUPER::new (
         $parent,
         wxID_ANY,
@@ -40,13 +40,13 @@ sub new {
         wxLB_SINGLE
     );
     bless $self, $class;
-    
+
     $self->{eol}      = undef;
     $self->{path}     = undef;
     $self->{filename} = undef;
 
     $self->{purpose} = GENERAL;
-    
+
     return $self;
 }
 

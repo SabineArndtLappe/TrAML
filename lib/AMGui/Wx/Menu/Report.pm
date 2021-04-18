@@ -15,14 +15,14 @@ sub new {
 
     my $self = $class->SUPER::new(@_);
     bless $self, $class;
-    
+
     # tips are shown in the status bar
     my %tips = (
         wxID_REPORT_PREDICTION     => _T("Summary of predicted classification."),
         wxID_REPORT_ANALOGICAL_SET => _T("Analogical set."),
         wxID_REPORT_GANGS          => _T("Gang effects.")
     );
-    
+
     $self->AppendCheckItem(wxID_REPORT_PREDICTION,
                            _T("&Predicted Classification"),
                            $tips{wxID_REPORT_PREDICTION});
@@ -30,17 +30,17 @@ sub new {
                  $main->reports->{wxID_REPORT_PREDICTION});
 
     $self->AppendCheckItem(wxID_REPORT_ANALOGICAL_SET,
-                           _T("&Analogical Set"), 
+                           _T("&Analogical Set"),
                            $tips{wxID_REPORT_ANALOGICAL_SET});
-    $self->Check(wxID_REPORT_ANALOGICAL_SET, 
+    $self->Check(wxID_REPORT_ANALOGICAL_SET,
                  $main->reports->{wxID_REPORT_ANALOGICAL_SET});
 
     $self->AppendCheckItem(wxID_REPORT_GANGS,
-                           _T("&Gangs"), 
+                           _T("&Gangs"),
                            $tips{wxID_REPORT_GANGS});
-    $self->Check(wxID_REPORT_GANGS, 
+    $self->Check(wxID_REPORT_GANGS,
                  $main->reports->{wxID_REPORT_GANGS});
-    
+
     return $self;
 }
 

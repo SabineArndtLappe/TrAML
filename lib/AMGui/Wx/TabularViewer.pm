@@ -35,7 +35,7 @@ sub new {
         wxLC_REPORT|wxLC_SINGLE_SEL|wxLC_HRULES|wxLC_VRULES
     );
     bless $self, $class;
-    
+
     $self->{main} = $main;
     $self->{statusbar_message} = '';
     $self->{colnames} = [];

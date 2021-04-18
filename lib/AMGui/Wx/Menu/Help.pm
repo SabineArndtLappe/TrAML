@@ -10,7 +10,7 @@ our @ISA = 'Wx::Menu';
 sub new {
     my $class = shift;
     my $main  = shift;
-    
+
     my $self = $class->SUPER::new(@_);
     bless $self, $class;
 

@@ -97,7 +97,7 @@ sub classify_all {
     # we've been told to show a progressbar
     if (defined $self->progressbar) {
         $self->{progressbar} = $self->progressbar->("Classifying",
-                                                    "Starting...", 
+                                                    "Starting...",
                                                     $self->testing->size);
     }
 

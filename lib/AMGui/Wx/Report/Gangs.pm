@@ -16,11 +16,11 @@ sub new {
 
     my $self = $class->SUPER::new($main);
     bless $self, $class;
-    
+
     $self->{title}   = "Gangs";
     $self->{output_filename} = "gangs.csv";
     #$self->{purpose} = AMGui::Wx::Viewer::RESULTS;
-    
+
     # individual reports are managed by a ResultViewer that keeps them
     # synchronized. Some methods can be forwarded back to the manager.
     $self->{manager} = $mgr;
@@ -43,7 +43,7 @@ sub add {
         #
         # add common columns that describe the test item
         #
-        
+
         # add test item features as separate columns
         # feature columns will be named F1,F2,..,Fn
         unless ( $self->has_header ) {
@@ -72,14 +72,14 @@ sub add {
 
         # add gang score: absolute value and percentage
         push @colnames, ("Score", "Score %")  unless $self->has_header;
-        push @columns, ($gang->{score}, 
+        push @columns, ($gang->{score},
                         $self->effect_as_pct($gang->{effect})); # TODO: get it from AM
 
         # add info about each class
         my @classes = sort $result->training_set->classes;
         while (my ($i, $class) = each(@classes)) {
             unless ($self->has_header) {
-                push @colnames, ("Class " . (1+$i), 
+                push @colnames, ("Class " . (1+$i),
                                  $class . "_ptrs",
                                  $class . "_pct");
             }
